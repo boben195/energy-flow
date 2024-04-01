@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.up-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--dark-gray-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.5s ease, bottom 0.5s ease, visibility 0.5s ease;
+}
+
+.up-btn:hover {
+    background-color: #5F6560;
+}
+
+.up-button-icon {
+    fill: var(--primary-white-color);
+}
+
+
+.up-btn.is-hidden {
+    bottom: -100px;
+}
+
+@media screen and (min-width:768px) {
+    .up-btn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .up-button-icon {
+        width: 33px;
+        height: 33px;
+    }
+}

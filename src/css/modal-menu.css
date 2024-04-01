@@ -1,0 +1,132 @@
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .backdrop-menu-modal {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+    }}
+
+@media screen and (min-width:768px) {
+    .backdrop-menu-modal {
+        display:none;
+    }
+}
+
+/* Modal Menu Header */
+
+.menu-modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-modal {
+    background-color: var(--dark-gray-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 20px 20px 40px 20px;
+    height: 95vh;
+    margin-top: auto;
+    /* margin-bottom: 20px; */
+    justify-content: space-between;
+}
+.modal-menu-logo {
+    color: #fafafa;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.menu-modal-close-button {
+    background-color: var(--dark-gray-color);
+    border: none;
+}
+
+/* Middle Buttons*/
+
+.modal-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+.modal-menu-button-home,
+.modal-menu-button-favorites {
+    background-color: var(--dark-gray-color);
+    border-style: none;
+    color: var(--primary-white-color);
+    font-size: 14px;
+    line-height: 1.3;
+    width: 96px;
+    height: 36px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-menu-button-home:active,
+.modal-menu-button-favorites:active  {
+    color: var( --main-black-color);
+    background-color: var(--primary-white-color);
+}
+
+/* Modal Menu Socials */
+
+.modal-menu-socials-list{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.modal-menu-socials-item {
+    width: 41px;
+    height: 41px;
+    border: 1px solid rgba(246, 246, 246, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modal-menu-socials-linc {
+    display: flex;
+    text-align: center;
+}
+
+
+.modal-menu-socials-svg {
+    fill: rgba(246, 246, 246, 0.8);
+}
+
+.modal-menu-socials-svg:hover {
+    fill: #fafafa;
+}
+
+
+
+/* Properties*/
+
+ .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }  
+
+  .modal-open {
+    overflow: hidden;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  } 
